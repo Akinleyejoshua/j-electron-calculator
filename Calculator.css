@@ -1,0 +1,142 @@
+body{
+    font-family: monospace;
+    display: inline-flex;
+    background: white;
+    flex-flow: column;
+}
+
+#calculator{
+    border:none;
+    padding: 1em;
+    border-radius: 0.5em;
+    position: relative;
+    margin: 1px;
+    padding-bottom: 4em;    
+    transition: 2s
+}
+#calculator:hover{
+    box-shadow: 0px 0px 10px gray;
+    background: white;
+    border-radius: 1em;
+
+}
+
+#panel{
+    border:none;
+    border-radius: 0.5em;
+    padding: 0.1em;
+    margin: 2em;
+    background: rgb(253, 253, 253);
+    box-shadow: none;
+
+}
+#panel:hover{
+    box-shadow: 0px 0px 1px gray;
+
+}
+
+#big-display{
+    border: none;
+    width: 20em;
+    padding-bottom: 5em;
+    color:skyblue;
+    font-size: 1em;
+    width: 25.5em;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+#small-display{
+    border: none;
+    width: 20em;
+    padding-bottom: 0em;
+    color:red;
+    text-align: right;
+    font-size: 1em;
+    width: 25.5em;
+    font-family: monospace;
+    overflow: hidden;
+
+}
+
+[type = button]{
+    margin: 0.3em;
+    padding: 1em;
+    border: none;
+    text-align: center;
+    position: relative;
+    left: 2em;
+    width: 4em;
+    border-radius: 0.2em;
+    background: linear-gradient(rgba(247, 243, 243, 0.041), rgb(165, 165, 165));
+    box-shadow: 0px 0px 5px ;
+
+}
+
+[type=button]:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+
+input[value='ON']{
+    width: 9em
+}
+
+input[value='+']{
+    width: 9em
+}
+
+
+input[value = '%larr;'],
+input[value = 'CE'],
+input[value = '+/-'],
+input[value = '&radic;'],
+input[value = '/'],
+input[value = '*'],
+input[value = '-'],
+input[value = '+'],
+input[value = 'C'],
+input[value = 'i/x'],
+input[value = 'CE']{
+    background: rgba(135, 207, 235, 0.900);
+    box-shadow: 0px 0px 5px black;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+input[value = '0'],
+input[value = '1'],
+input[value = '2'],
+input[value = '3'],
+input[value = '4'],
+input[value = '5'],
+input[value = '6'],
+input[value = '7'],
+input[value = '8'],
+input[value = '9'],
+input[value = '.'],
+input[value = '=']{
+    background: rgba(116, 241, 116, 0.250);
+    box-shadow: 0px 0px 5px gray;
+}
+
+
+input[value='Tan'],
+input[value='Sin'],
+input[value='Cos']{
+    background: rgba(247, 54, 86, 0.671);
+    color:white;
+    box-shadow: 0px 0px 5px gray;
+
+}
+
+input[value = '0']{
+    width:9em;  
+    background: rgba(0, 0, 0, 0.459);
+    color: white;
+}
+
+
+
+
+
